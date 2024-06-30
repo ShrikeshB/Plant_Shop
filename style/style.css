@@ -1,0 +1,180 @@
+:root {
+  --primary-color: #CFECEC ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #CFECEC;
+  position: relative;
+  overflow-x: hidden;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 1em 6em;
+}
+nav .logo {
+  width: 30%;
+}
+nav .logo .img-container {
+  width: 40%;
+}
+nav .logo .img-container img {
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li ~ li {
+  margin-left: 1em;
+}
+nav ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.overlay-img {
+  position: absolute;
+  z-index: -1;
+  right: -5%;
+  bottom: -3%;
+}
+.overlay-img img {
+  width: 140%;
+  opacity: 6%;
+}
+
+main {
+  width: 100%;
+  padding: 2em 6em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  height: 90vh;
+}
+main .left {
+  width: 36%;
+  height: 100%;
+}
+main .left .main-card {
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+  border-radius: 10px;
+  padding: 1em;
+  height: 90%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 2em;
+}
+main .left .main-card .content {
+  width: 70%;
+  z-index: 10;
+}
+main .left .main-card .content h4 {
+  font-size: 35px;
+}
+main .left .main-card .img-container {
+  position: absolute;
+  left: -15em;
+  bottom: -5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 140%;
+}
+main .left .main-card .img-container img {
+  width: 100%;
+}
+main .right {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  flex-direction: column;
+  height: 100%;
+}
+main .right .top .tag {
+  color: #557E00;
+}
+main .right .top .title {
+  font-size: 2rem;
+  line-height: 70px;
+  font-weight: 800;
+}
+main .right .top .title .t {
+  display: flex;
+}
+main .right .top .title .t span {
+  font-size: 10rem;
+  margin-top: 0.2em;
+  font-weight: 900;
+}
+main .right .top .tag-line {
+  opacity: 50%;
+}
+main .right .bottom .card-grp {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  -moz-column-gap: 2em;
+       column-gap: 2em;
+}
+main .right .bottom .card {
+  background-color: #fff;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+  border-radius: 10px;
+  padding: 1em;
+  height: 15rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+main .right .bottom .card .content {
+  width: 70%;
+  z-index: 10;
+}
+main .right .bottom .card .content h4 {
+  font-size: 18px;
+}
+main .right .bottom .card .img-container {
+  position: absolute;
+  left: -6em;
+  bottom: -2.5em;
+  width: 120%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main .right .bottom .card .img-container img {
+  width: 100%;
+}
+main .right .bottom .c1 .img-container {
+  left: -5em;
+}
+main .right .bottom .c2 .img-container {
+  left: -4em;
+}
+main .right .bottom .c3 .img-container {
+  width: 110%;
+  left: -4em;
+}/*# sourceMappingURL=style.css.map */

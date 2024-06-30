@@ -1,0 +1,211 @@
+@import './_mixin';
+
+:root {
+    --primary-color: #CFECEC
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #CFECEC;
+    position: relative;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    @include flex();
+    justify-content: space-between;
+    padding: 1em 6em;
+
+    .logo {
+        width: 30%;
+
+        .img-container {
+            width: 40%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+
+        li~li {
+            margin-left: 1em;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.overlay-img {
+    position: absolute;
+    z-index: -1;
+    right: -5%;
+    bottom: -3%;
+
+    img {
+        width: 140%;
+        opacity: 6%;
+    }
+}
+
+
+main {
+    width: 100%;
+    padding: 2em 6em;
+    @include flex();
+    justify-content: space-between;
+    height: 90vh;
+
+    .left {
+        width: 36%;
+        height: 100%;
+
+        .main-card {
+            background-color: #fff;
+            width: 100%;
+            box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+            border-radius: 10px;
+            padding: 1em;
+            height: 90%;
+            position: relative;
+            @include flex();
+            align-items: flex-end;
+            justify-content: flex-end;
+            margin-top: 2em;
+
+            .content {
+                width: 70%;
+                z-index: 10;
+
+                h4 {
+                    font-size: 35px;
+                }
+            }
+
+            .img-container {
+                position: absolute;
+                left: -15em;
+                bottom: -5em;
+                @include flex();
+                width: 140%;
+
+                img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .right {
+        display: flex;
+        justify-content: space-around;
+
+        width: 60%;
+        flex-direction: column;
+        height: 100%;
+
+        .top {
+            .tag {
+                color: #557E00;
+            }
+
+            .title {
+                font-size: 2rem;
+                line-height: 70px;
+                font-weight: 800;
+
+                .t {
+                    display: flex;
+
+                    span {
+                        font-size: 10rem;
+                        margin-top: .2em;
+                        font-weight: 900;
+                    }
+                }
+            }
+
+            .tag-line {
+                opacity: 50%;
+            }
+        }
+
+        .bottom {
+            .card-grp {
+                position: relative;
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                column-gap: 2em;
+            }
+
+            .card {
+                background-color: #fff;
+                box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.308);
+                border-radius: 10px;
+                padding: 1em;
+                height: 15rem;
+                position: relative;
+                @include flex();
+                align-items: flex-end;
+                justify-content: flex-end;
+
+
+                .content {
+                    width: 70%;
+                    z-index: 10;
+
+                    h4 {
+                        font-size: 18px;
+                    }
+                }
+
+                .img-container {
+                    position: absolute;
+                    left: -6em;
+                    bottom: -2.5em;
+                    width: 120%;
+                    overflow: hidden;
+                    @include flex();
+
+                    img {
+                        width: 100%;
+                    }
+                }
+            }
+
+            .c1 {
+                .img-container {
+                    left: -5em;
+                }
+            }
+
+            .c2 {
+                .img-container {
+                    left: -4em;
+                }
+            }
+
+            .c3 {
+                .img-container {
+                    width: 110%;
+                    left: -4em;
+                }
+            }
+        }
+    }
+
+}
